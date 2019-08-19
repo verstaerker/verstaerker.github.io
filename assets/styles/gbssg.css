@@ -1,0 +1,48 @@
+header {
+  margin-bottom: 80px;
+}
+
+article {
+  background-color: #eee;
+  padding: 0 20px 20px;
+}
+
+article h3 {
+  margin: 0 -20px;
+  padding: 10px 20px;
+  background-color: #ccc
+}
+
+.subtitle {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.wrapper {
+  padding: 30px;
+}
+
+.content {
+  display: flex; /* TODO: refactor to grid */
+  flex-wrap: wrap;
+}
+
+.block {
+  flex: 1 1 50%;
+  padding-left: 50px;
+  min-width: 300px;
+}
+
+.block--width-500 {
+  max-width: 460px;
+}
+
+.block--width-900 {
+  max-width: 1000px;
+}
+
+.block:first-child {
+  padding-left: 0;
+}

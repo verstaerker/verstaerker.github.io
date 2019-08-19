@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    The MIT License (MIT)
+
+    Copyright (c) 2016 Russ Weakley, Max Design
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of
+    this software and associated documentation files (the "Software"), to deal in
+    the Software without restriction, including without limitation the rights to
+    use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+    of the Software, and to permit persons to whom the Software is furnished to do
+    so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+  -->
+
+  <meta charset="utf-8">
+  <title>One-column full-width responsive layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" lang="en" content="ADD SITE DESCRIPTION">
+  <meta name="author" content="ADD AUTHOR INFORMATION">
+  <meta name="robots" content="index, follow">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+  <div class="container">
+    <h1 class="header-heading">Sitename</h1>
+  </div>
+</div>
+<div class="nav-bar">
+  <div class="container">
+    <ul class="nav">
+      <li><a href="#">Nav item 1</a></li>
+      <li><a href="#">Nav item 2</a></li>
+      <li><a href="#">Nav item 3</a></li>
+    </ul>
+  </div>
+</div>
+<div class="content">
+  <div class="container">
+    <div class="main">
+      <h1>Page title</h1>
+
+      <!-- Paragraphs -->
+      <h3>Paragraphs</h3>
+      <p>Ut wisi enim ad minim veniam,
+        <a href="#">quis nostrud exerci tation ullamcorper</a> suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      </p>
+      <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+      <!-- Responsive images -->
+      <h3>Responsive images</h3>
+      <p>For images to be responsive (so that they will rescale to suit the width of the parent, use the
+        <code>.img-responsive</code> class.</p>
+      <p><img class="img-responsive" src="http://placehold.it/800x350" alt=""></p>
+
+      <!-- Lists -->
+      <h3>Unordered list</h3>
+      <p>Unordered lists are used to markup lists where list items do not require numbering.</p>
+      <ul>
+        <li>Ut wisi enim ad minim veniam</li>
+        <li>Quis nostrud exerci tation</li>
+        <li>Lamcorper suscipit lobortis nis</li>
+        <li>Ut aliquip ex ea commodo consequat</li>
+        <li>Duis autem vel eum iriure dolor</li>
+      </ul>
+
+      <h3>Ordered list</h3>
+      <p>Ordered lists are used to markup lists where list items require numbering.</p>
+      <ol>
+        <li>Hendrerit in vulputate velit esse</li>
+        <li>Olestie consequat</li>
+        <li>Vel illum dolore eu feugiat</li>
+        <li>Nulla facilisis at vero eros</li>
+        <li>Accumsan et iusto odio</li>
+      </ol>
+
+      <h3>Unstyled list</h3>
+      <p>You can make the list unstyled using the <code>list-unstyled</code> class.</p>
+      <ul class="list-unstyled">
+        <li>Ut wisi enim ad minim veniam</li>
+        <li>Quis nostrud exerci tation</li>
+        <li>Lamcorper suscipit lobortis nis</li>
+        <li>Ut aliquip ex ea commodo consequat</li>
+        <li>Duis autem vel eum iriure dolor</li>
+      </ul>
+
+      <h3>Inline list</h3>
+      <p>You can make the list display inline using the <code>list-inline</code> class.</p>
+      <ul class="list-inline">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+      </ul>
+
+      <!-- Blockquotes -->
+      <h3>Blockquotes</h3>
+      <p>The blockquote element is used to markup long quotations. Ideally, content inside should be wrapped in paragraph elements.</p>
+      <blockquote>
+        <p>The real names of our people were destroyed during slavery. The last name of my forefathers was taken from them when they were brought to America and made slaves, and then the name of the slave master was given, which we refuse, we reject that name today and refuse it. I never acknowledge it whatsoever.</p>
+        <footer><a href="http://en.wikipedia.org/wiki/Malcolm_X">Malcolm X</a></footer>
+      </blockquote>
+
+      <h3>Buttons</h3>
+      <p>You can apply the <code>btn</code> class to any element that requires a button style.</p>
+      <p>
+        <button type="submit" class="btn btn--pulse">Submit</button>
+      </p>
+
+      <!-- Tables -->
+      <h3>Tables</h3>
+      <p>Tables should be given the class of <code>table</code>.</p>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>mark.otto@example.com</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>jacob.thornton@example.com</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>larry.the-bird@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="aside">
+      <h3>Sidebar</h3>
+      <p>Ut wisi enim ad minim veniam,
+        <a href="#">quis nostrud exerci tation ullamcorper</a> suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      </p>
+      <h3>Excersises</h3>
+      <p><strong>NOTE: reloading the page in between changes will reset the page!</strong></p>
+      <ol>
+        <li>What's the name of the font used for the <code>h3</code> titles?</li>
+        <li>What color value has the "Submit" buttons background when inactive?</li>
+        <li>What color value is used for the "Submit" buttons background when it's hovered?</li>
+        <li>Change the background-color of the "Submit" button in default and hover mode by using the color picker of the inspector.</li>
+        <li>Inspect the layout changes between the desktop and mobile view. Instead of resizing the browser use the "device" or "responsive" mode.</li>
+        <li>What could be improved on the mobile layout?</li>
+        <li>
+          Improve the style for the subtitles so the sections become better distinguishable.
+          <br>
+          <br>
+          You could use the following properties to do so:
+          <ul>
+            <li>
+              <code>margin</code>: outer spacing - you can define a single value for all directions or one for each direction:
+              <code>[top] [right] [bottom] [left]</code></li>
+            <li>
+              <code>padding</code>: inner spacing- you can define a single value for all directions or one for each direction:
+              <code>[top] [right] [bottom] [left]</code></li>
+            <li><code>color</code>: font color (e.g. blue)</li>
+            <li><code>border</code> - define value as
+              <code>[width (e.g. 1px)], [style (e.g. solid)], [color (e.g. red)]</code></li>
+          </ul>
+          You can find additional style options on <a href="https://cssreference.io/"
+                                                      target="_blank">https://cssreference.io/</a> (e.g. search for
+          <code>font</code>).
+        </li>
+        <li>The developer tools of Chrome and Firefox allow to inspect the animation on the submit button. Did you find it?</li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+    &copy; Copyright 2015
+  </div>
+</div>
+</body>
+</html>
