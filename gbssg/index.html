@@ -15,14 +15,125 @@
       <span class="subtitle">Dipl. Gestalter/in HF Fachrichtung Interactive Media Design</span>
     </h1>
   </header>
+  <input type="checkbox" id="step-1" class="step-checkbox">
+  <input type="checkbox" id="step-2" class="step-checkbox">
   <main>
     <h2>Tools</h2>
-    <article>
-      <h3>Browser</h3>
+    <article class="lesson-1">
+      <h3>
+        Browser
+        <label class="steps" for="step-1"></label>
+      </h3>
+      <div class="content">
+        <div class="block block--width-500">
+          <p>Webbrowser können heute weit mehr als nur Webseiten darstellen.</p>
+          <ul class="list--spaced-500">
+            <li>
+              Browserstatistik
+              <ul>
+                <li>
+                  <a href="https://www.w3counter.com/globalstats.php" target="_blank">w3counter.com</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              PWAs (Progressive Web App) Stores
+              <ul class="list--spaced-0">
+                <li>
+                  <a href="http://progressivewebapproom.com/" target="_blank">progressivewebapproom.com</a>
+                </li>
+                <li>
+                  <a href="https://appsco.pe" target="_blank">appsco.pe</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="block">
+          <ul class="browser-list">
+            <li class="browser-list__item">
+              <a href="https://www.getfirefox.com" target="_blank">
+                <figure class="browser">
+                  <img class="browser__logo"
+                       src="../assets/images/firefox.svg"
+                       alt="Firefox"
+                       width="100"
+                       height="100">
+                  <figcaption>
+                    Firefox
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="browser-list__item">
+              <a href="https://www.google.com/chrome/" target="_blank">
+                <figure class="browser">
+                  <img class="browser__logo"
+                       src="../assets/images/chrome.svg"
+                       alt="Google Chrome"
+                       width="100"
+                       height="100">
+                  <figcaption>
+                    Google Chrome
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="browser-list__item">
+              <figure class="browser">
+                <img class="browser__logo"
+                     src="../assets/images/ie.svg"
+                     alt="Internet Explorer"
+                     width="100"
+                     height="100">
+                <figcaption>
+                  Internet Explorer
+                </figcaption>
+              </figure>
+            </li>
+            <li class="browser-list__item">
+              <a href="https://www.microsoftedgeinsider.com" target="_blank">
+                <figure class="browser">
+                  <img class="browser__logo"
+                       src="../assets/images/edge.svg"
+                       alt="Microsoft Edge"
+                       width="100"
+                       height="100">
+                  <figcaption>
+                    Microsoft Edge
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="browser-list__item">
+              <a href="https://www.apple.com/de/safari/" target="_blank">
+                <figure class="browser">
+                  <img class="browser__logo"
+                       src="../assets/images/safari.svg"
+                       alt="Safari"
+                       width="100"
+                       height="100">
+                  <figcaption>
+                    Safari
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="browser-list__item browser-list__item--full-width">
+              <a href="https://de.wikipedia.org/wiki/Liste_von_Webbrowsern" target="_blank">Weitere Browser</a></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <article class="lesson--2">
+      <h3>
+        Entwicklertools
+        <label class="steps" for="step-2"></label>
+      </h3>
       <div class="content">
         <div class="block block--width-500">
           <p>
-            Mit dem Browser lässt sich nicht nur durch das Internet durchforsten und Webseiten anzeigen. Die meisten verfügen auch über ausgereifte Entwicklerwerkzeuge um den Inhalt einer Seite gezielt zu untersuchen.
+            Die meisten Browser verfügen über ausgereifte Entwicklerwerkzeuge um den Inhalt einer Seite gezielt zu untersuchen.
           </p>
         </div>
         <div class="block block--width-900">
@@ -31,10 +142,13 @@
             <strong>Beachte, dass beim Neuladen der Seite die Anpassungen aus den folgenden Übungen verlohren gehen!</strong>
           </p>
           <p>
-            Öffne die folgende Seite in einem neuem Tab: <a href="inspector/index.html" target="_blank">Entwickler Tools</a>
+            Öffne die folgende Seite in einem neuem Tab: <a href="inspector/index.html"
+                                                            target="_blank">Entwickler Tools</a>
           </p>
-          <ol>
-            <li>Kannst du herausfinden, wie der Name der Schrift lautet, die für die <code>h3</code> Titel verwendet wurde?</li>
+          <ol class="list--spaced-500">
+            <li>Kannst du herausfinden, wie der Name der Schrift lautet, die für die
+              <code>h3</code> Titel verwendet wurde?
+            </li>
             <li>Was ist der Farbwert hat der Hintergrund des "Submit"-Buttons im normalen Zustand?</li>
             <li>Welchen Farbwert hat der Hintergrund des gleichen Buttons, wenn du mit der Maus darüber fährst (hover)?</li>
             <li>Passe die Hintergrundfarbe des Buttons für den normalen und hover Zustand über den Farbselektor der Entwicklertools an (zu erkennen an einem Farbquadrat oder -kreis neben dem Farbwert)</li>
@@ -53,11 +167,14 @@
                   <code>padding</code> (Innenabstand) - Du kannst als Wert einen einzelnen Wert für alle Seiten oder für jede Seite einen anderen Wert definieren:
                   <code>[top] [right] [bottom] [left]</code></li>
                 <li><code>color</code> (Schriftfarbe) z.B. <code>blue</code> oder <code>#0000bb</code></li>
-                <li><code>border</code> (Kontur) - Du kannst die einzelnen Katen unabhängig stylen in dem du den Namen der Eigenschaft mit der Richtung ergänzt (z.B. <code>border-bottom</code>). Als Wert müssen folgende Angaben gemacht werden:
+                <li>
+                  <code>border</code> (Kontur) - Du kannst die einzelnen Katen unabhängig stylen in dem du den Namen der Eigenschaft mit der Richtung ergänzt (z.B.
+                  <code>border-bottom</code>). Als Wert müssen folgende Angaben gemacht werden:
                   <code>[width (e.g. 1px)], [style (e.g. solid)], [color (e.g. red)]</code></li>
               </ul>
               Weitere CSS Eigenschaften findest du auf <a href="https://cssreference.io/"
-                                                          target="_blank">https://cssreference.io/</a>. Versuche z.B. die Grösse oder das Gewicht der Schrift zu ändern. Suche dafür in den Referenzen nach <code>font</code>.
+                                                          target="_blank">https://cssreference.io/</a>. Versuche z.B. die Grösse oder das Gewicht der Schrift zu ändern. Suche dafür in den Referenzen nach
+              <code>font</code>.
             </li>
             <li>
               Die Entwicklertools von Chrome und Firefox erlauben es auch den Ablauf einer Animation genau zu untersuchen. Findest du heraus wie?
@@ -66,6 +183,15 @@
         </div>
       </div>
     </article>
+<!--    <article class="lesson&#45;&#45;3">-->
+<!--      <h3>JavaScript Frameworks</h3>-->
+<!--      <div class="content">-->
+<!--        <div class="block block&#45;&#45;width-500">-->
+<!--          -->
+<!--        </div>-->
+<!--        <div class="block block&#45;&#45;width-800"></div>-->
+<!--      </div>-->
+<!--    </article>-->
   </main>
 </div>
 </body>

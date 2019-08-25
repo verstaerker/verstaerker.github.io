@@ -1,14 +1,18 @@
+body {
+  overflow: scroll;
+}
+
 header {
   margin-bottom: 80px;
 }
 
 article {
   background-color: #eee;
-  padding: 0 20px 20px;
+  padding: 0 20px 80px;
 }
 
 article h3 {
-  margin: 0 -20px;
+  margin: 0 -20px 20px;
   padding: 10px 20px;
   background-color: #ccc
 }
@@ -45,4 +49,87 @@ article h3 {
 
 .block:first-child {
   padding-left: 0;
+}
+
+.list--spaced-500 li {
+  margin-bottom: 10px;
+}
+
+.list--spaced-0 li {
+  margin: 0;
+}
+
+.browser-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.browser-list__item {
+  flex: 1 1 20%;
+  padding: 0 3% 30px;
+  min-width: 100px;
+}
+
+.browser-list__item--full-width {
+  min-width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.browser {
+  text-align: center;
+  margin: 0;
+}
+
+.browser__logo {
+  margin-bottom: 10px;
+  max-height: 100px;
+}
+
+.steps {
+  float: right;
+  position: relative;
+}
+
+.steps::before {
+  display: block;
+  position: absolute;
+  content: "";
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 8px;
+  border: 3px solid black;
+  border-left: 0;
+  border-top: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: opacity 1s linear;
+}
+
+.steps::after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid black;
+  width: 20px;
+  height: 20px;
+}
+
+.step-checkbox#step-1:not(:checked) ~ main .lesson--2,
+.step-checkbox#step-2:not(:checked) ~ main .lesson--3 {
+  display: none;
+}
+
+.step-checkbox#step-1:checked ~ main [for="step-1"]::before,
+.step-checkbox#step-2:checked ~ main [for="step-2"]::before {
+  opacity: 1;
+}
+
+.step-checkbox {
+  display: none;
 }
