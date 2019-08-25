@@ -238,7 +238,7 @@ Single styles
 }
 
 .btn {
-  color: #fff !important;
+  color: #fff;
   background-color: royalblue;
   display: inline-block;
   padding: 0.5em 1em;
@@ -267,6 +267,13 @@ Single styles
 .btn:active {
   color: #fff !important;
   background-color: red;
+}
+
+.btn--secondary {
+  background-color: transparent;
+  padding: 0;
+  text-decoration: underline;
+  color: royalblue;
 }
 
 .btn--pulse {
@@ -340,4 +347,13 @@ Wide styles
     padding: 0;
     border-bottom: 0;
   }
+}
+
+/** Example classes **/
+.blue {
+  color: royalblue;
+}
+
+.grey {
+  color: #999;
 }
