@@ -17,9 +17,11 @@
   </header>
   <input type="checkbox" id="step-1" class="step-checkbox">
   <input type="checkbox" id="step-2" class="step-checkbox">
+  <input type="checkbox" id="step-3" class="step-checkbox">
+<!--  <input type="checkbox" id="step-4" class="step-checkbox">-->
   <main>
     <h2>Tools</h2>
-    <article class="lesson-1">
+    <article id="lesson--1">
       <h3>
         Browser
         <label class="steps" for="step-1"></label>
@@ -125,7 +127,7 @@
         </div>
       </div>
     </article>
-    <article class="lesson--2">
+    <article id="lesson--2">
       <h3>
         Entwicklertools
         <label class="steps" for="step-2"></label>
@@ -182,15 +184,86 @@
         </div>
       </div>
     </article>
-<!--    <article class="lesson&#45;&#45;3">-->
-<!--      <h3>JavaScript Frameworks</h3>-->
-<!--      <div class="content">-->
-<!--        <div class="block block&#45;&#45;width-500">-->
-<!--          -->
-<!--        </div>-->
-<!--        <div class="block block&#45;&#45;width-800"></div>-->
-<!--      </div>-->
-<!--    </article>-->
+    <article id="lesson--3">
+      <h3>
+        Style Frameworks
+        <label class="steps" for="step-3"></label>
+      </h3>
+      <div class="content">
+        <div class="block block--width-500">
+          Mit Style oder Komponenten Frameworks können eine Starthilfe für ein neues Projekt sein.
+        </div>
+        <div class="block block--width-800 flexbox">
+          <a href="https://www.getbootstrap.com" target="_blank">
+            <figure class="framework">
+              <img src="../assets/images/bootstrap.svg" alt="Bootstrap" width="200" height="auto">
+              <figcaption>
+                Bootstrap
+              </figcaption>
+            </figure>
+          </a>
+          <div style="margin-left: 40px;">
+            Weitere Frameworks
+            <ul>
+              <li><a href="https://foundation.zurb.com/" target="_blank">Foundation</a></li>
+              <li><a href="https://materializecss.com/" target="_blank">Materialize</a></li>
+              <li><a href="https://purecss.io/" target="_blank">Pure.css</a></li>
+              <li><a href="https://getuikit.com/" target="_blank">UIkit</a></li>
+              <li><a href="https://bulma.io/" target="_blank">Bulma</a></li>
+              <li><a href="https://semantic-ui.com/" target="_blank">Semantic UI</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article id="lesson--4">
+      <h3>
+        JavaScript Frameworks
+<!--        <label class="steps" for="step-4"></label>-->
+      </h3>
+      <div class="content">
+        <div class="block block--width-500">
+          <p>JavaScript Frameworks helfen uns den Inhalt einer Seite dynamisch zu verändern und dem Benutzer das Gefühl zu geben, dass er nicht nur Seiten durchblättert sondern ein Programm bedient.</p>
+          <p>
+            <a href="https://codesandbox.io/s/vue-todomvc-tesy2" target="_blank">Vue Tutorial</a>
+          </p>
+        </div>
+        <div class="block block--width-800">
+          <ul class="framework-list">
+            <li class="framework-list__item">
+              <a href="https://angular.io/" target="_blank">
+                <figure class="framework">
+                  <img class="framework__logo" src="../assets/images/angular.svg" alt="Angular">
+                  <figcaption>
+                    Angular
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="framework-list__item">
+              <a href="https://vuejs.org/" target="_blank">
+                <figure class="framework">
+                  <img class="framework__logo" src="../assets/images/vue.svg" alt="Vue">
+                  <figcaption>
+                    Vue
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="framework-list__item">
+              <a href="https://reactjs.org/" target="_blank">
+                <figure class="framework">
+                  <img class="framework__logo" src="../assets/images/react.svg" alt="React">
+                  <figcaption>
+                    React
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
   </main>
 </div>
 </body>
