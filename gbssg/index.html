@@ -18,7 +18,7 @@
   <input type="checkbox" id="step-1" class="step-checkbox">
   <input type="checkbox" id="step-2" class="step-checkbox">
   <input type="checkbox" id="step-3" class="step-checkbox">
-<!--  <input type="checkbox" id="step-4" class="step-checkbox">-->
+  <!--  <input type="checkbox" id="step-4" class="step-checkbox">-->
   <main>
     <h2>Tools</h2>
     <article id="lesson--1">
@@ -147,16 +147,15 @@
             <strong>Beachte, dass beim Neuladen der Seite die Anpassungen aus den folgenden Übungen verlohren gehen!</strong>
           </p>
           <ol class="list--spaced-500">
-            <li>Kannst du herausfinden, wie der Name der Schrift lautet, die für die
-              <code>h3</code> Titel verwendet wurde?
+            <li>Kannst du herausfinden, wie der Name der Schrift lautet, die für die Titel verwendet wurde?
             </li>
-            <li>Was ist der Farbwert hat der Hintergrund des "Submit"-Buttons im normalen Zustand?</li>
+            <li>Welchen Farbwert haben der Hintergrund und die Kontur der Buttons im Karussel im normalen Zustand?</li>
             <li>Welchen Farbwert hat der Hintergrund des gleichen Buttons, wenn du mit der Maus darüber fährst (hover)?</li>
             <li>Passe die Hintergrundfarbe des Buttons für den normalen und hover Zustand über den Farbselektor der Entwicklertools an (zu erkennen an einem Farbquadrat oder -kreis neben dem Farbwert)</li>
             <li>Vergleiche das Desktop und Mobile Layout der Seite. Benutze dazu die "Device"/"Responsive" Vorschau des Browsers, statt das Browserfenster selbst zu verkleinern.</li>
-            <li>Welche zusätzliche Anpassungen würdest du für das mobile Layout empfehlen?</li>
+            <li>Gibt es Dinge, die du auf Mobile anpassen würdest?</li>
             <li>
-              Passe die Titel der Zwischentitel an, damit sich die einzelnen Abschnitte besser von einander abheben.
+              Passe die Titel der zweispaltigen Artikel an, damit sie sich besser vom Fliesstext abheben.
               <br>
               <br>
               Es bieten sich vor allem folgende CSS Eigenschaften an:
@@ -169,12 +168,15 @@
                   <code>[top] [right] [bottom] [left]</code></li>
                 <li><code>color</code> (Schriftfarbe) z.B. <code>blue</code> oder <code>#0000bb</code></li>
                 <li>
-                  <code>border</code> (Kontur) - Du kannst die einzelnen Katen unabhängig stylen in dem du den Namen der Eigenschaft mit der Richtung ergänzt (z.B.
-                  <code>border-bottom</code>). Als Wert müssen folgende Angaben gemacht werden:
-                  <code>[width (e.g. 1px)], [style (e.g. solid)], [color (e.g. red)]</code></li>
+                  <code>font-weight</code> (Strichstärke) - Du kannst die Strichstärke der Schrift in 100er Schritten zwischen 100 und 900 festlegen. z.B.
+                  <code>font-weight: 800;</code>
+                </li>
+                <li>
+                  <code>font-style</code> (Schriftstil) z.B. <code>normal</code> oder <code>italic</code>
+                </li>
               </ul>
               Weitere CSS Eigenschaften findest du auf <a href="https://cssreference.io/"
-                                                          target="_blank">https://cssreference.io/</a>. Versuche z.B. die Grösse oder das Gewicht der Schrift zu ändern. Suche dafür in den Referenzen nach
+                                                          target="_blank">https://cssreference.io/</a>.
               <code>font</code>.
             </li>
             <li>
@@ -186,12 +188,90 @@
     </article>
     <article id="lesson--3">
       <h3>
-        Style Frameworks
+        JavaScript Frameworks
         <label class="steps" for="step-3"></label>
       </h3>
       <div class="content">
         <div class="block block--width-500">
-          Mit Style oder Komponenten Frameworks können eine Starthilfe für ein neues Projekt sein.
+          <p>
+            JavaScript Frameworks helfen uns den Inhalt einer Seite dynamisch zu verändern und dem Benutzer das Gefühl zu geben, dass er nicht nur Seiten durchblättert sondern ein Programm bedient.
+          </p>
+          <ul>
+            <li>
+              Framework Tutorial
+              <ul>
+                <li>
+                  <a href="https://codesandbox.io/s/vue-todomvc-tesy2" target="_blank">Sandbox</a>
+                </li>
+                <li>
+                  <a href="https://github.com/patric-eberle/vue-todo-mvc/commits/master" target="_blank">Anleitung</a>
+                  <br>
+                  Von unten nach oben, "initial commit" ignorieren.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="block block--width-800">
+          <ul class="framework-list">
+            <li class="framework-list__item">
+              <a href="https://angular.io/" target="_blank">
+                <figure class="framework">
+                  <img class="framework__logo" src="../assets/images/angular.svg" alt="Angular">
+                  <figcaption>
+                    Angular
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="framework-list__item">
+              <a href="https://reactjs.org/" target="_blank">
+                <figure class="framework">
+                  <img class="framework__logo" src="../assets/images/react.svg" alt="React">
+                  <figcaption>
+                    React
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="framework-list__item">
+              <a href="https://vuejs.org/" target="_blank">
+                <figure class="framework">
+                  <img class="framework__logo" src="../assets/images/vue.svg" alt="Vue">
+                  <figcaption>
+                    Vue
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <article id="lesson--4">
+      <h3>
+        Style Frameworks
+        <!--        <label class="steps" for="step-4"></label>-->
+      </h3>
+      <div class="content">
+        <div class="block block--width-500">
+          <p>Mit Style oder Komponenten Frameworks können eine Starthilfe für ein neues Projekt sein.</p>
+          <ul>
+            <li>
+              Framework Tutorial
+              <ul>
+                <li>
+                  <a href="https://codepen.io/patric-eberle/pen/vYBJOvZ" target="_blank">Pen</a>
+                </li>
+                <li>
+                  <a href="https://github.com/patric-eberle/bootstrap-tutorial/commits/master"
+                     target="_blank">Anleitung</a>
+                  <br>
+                  Von unten nach oben, "initial commit" ignorieren.
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
         <div class="block block--width-800 flexbox">
           <a href="https://www.getbootstrap.com" target="_blank">
@@ -213,54 +293,6 @@
               <li><a href="https://semantic-ui.com/" target="_blank">Semantic UI</a></li>
             </ul>
           </div>
-        </div>
-      </div>
-    </article>
-    <article id="lesson--4">
-      <h3>
-        JavaScript Frameworks
-<!--        <label class="steps" for="step-4"></label>-->
-      </h3>
-      <div class="content">
-        <div class="block block--width-500">
-          <p>JavaScript Frameworks helfen uns den Inhalt einer Seite dynamisch zu verändern und dem Benutzer das Gefühl zu geben, dass er nicht nur Seiten durchblättert sondern ein Programm bedient.</p>
-          <p>
-            <a href="https://codesandbox.io/s/vue-todomvc-tesy2" target="_blank">Vue Tutorial</a>
-          </p>
-        </div>
-        <div class="block block--width-800">
-          <ul class="framework-list">
-            <li class="framework-list__item">
-              <a href="https://angular.io/" target="_blank">
-                <figure class="framework">
-                  <img class="framework__logo" src="../assets/images/angular.svg" alt="Angular">
-                  <figcaption>
-                    Angular
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li class="framework-list__item">
-              <a href="https://vuejs.org/" target="_blank">
-                <figure class="framework">
-                  <img class="framework__logo" src="../assets/images/vue.svg" alt="Vue">
-                  <figcaption>
-                    Vue
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li class="framework-list__item">
-              <a href="https://reactjs.org/" target="_blank">
-                <figure class="framework">
-                  <img class="framework__logo" src="../assets/images/react.svg" alt="React">
-                  <figcaption>
-                    React
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </article>

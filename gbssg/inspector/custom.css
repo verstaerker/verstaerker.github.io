@@ -1,0 +1,91 @@
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Exo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 26rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-item {
+  height: 26rem;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 641px) {
+  .carousel img,
+  .carousel-item {
+    height: 35rem;
+  }
+
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+.teasers p {
+  margin-right: .75rem; /* rem is a unit which relates to the root font-size. So we apply 75% of the font-size of the <html> element (default: 16px) */
+  margin-left: .75rem;
+}
+
+.teasers [class*="col-"] {
+  margin-bottom: 1.5rem;
+}
+
+.teasers .rounded-circle {
+  position: relative;
+  margin-bottom: 20px;
+  animation: pulse 4s infinite;
+}
+
+.featurette-divider {
+  margin: 5rem 0; /* Additional spacing for the horizontal ruler */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  }
+  25% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+  90% {
+    transform: scale(1);
+  }
+  99% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
