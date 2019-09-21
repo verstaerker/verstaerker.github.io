@@ -9,6 +9,17 @@
     .shower {
       --slide-ratio: calc(16 / 9);
     }
+
+    /* Allow combination of .mark and <mark> */
+    .slide pre code.mark:not(:only-child) {
+      position: relative;
+      z-index: -1;
+    }
+
+    .slide::after {
+      text-align: right;
+      right: 26px;
+    }
   </style>
 </head>
 <body class="shower list">
@@ -18,19 +29,97 @@
   <p>Yours Truly, Famous Inc.</p>
 </header>
 
-<main>
-  <section class="slide">
-    <h2>&lt;picture&gt;</h2>
-    <pre>
-      <code>&lt;div&gt;</code>
+<section class="slide">
+  <h2>&lt;picture&gt;</h2>
+  <pre>
       <code class="mark">&lt;picture&gt;</code>
-      <code>&lt;source media="(min-width: 650px)" srcset="img_pink_flowers.jpg"&gt;</code>
-      <code>&lt;source media="(min-width: 465px)" srcset="img_white_flower.jpg"&gt;</code>
-      <code>&lt;img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"&gt;</code>
-      <code>&lt;div&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 650px)" srcset="large.jpg"&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 465px)" srcset="small.jpg"&gt;</code>
+      <code class="mark">  &lt;img src="fallback.jpg" alt="Flowers"&gt;</code>
+      <code class="mark">&lt;/picture&gt;</code>
     </pre>
-  </section>
-</main>
+</section>
+
+<section class="slide">
+  <h2>&lt;picture&gt;</h2>
+  <pre>
+      <code class="mark">&lt;picture&gt;</code>
+      <code class="mark">  &lt;source <mark>media="(min-width: 650px)"</mark> srcset="large.jpg"&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 465px)" srcset="small.jpg"&gt;</code>
+      <code class="mark">  &lt;img src="fallback.jpg" alt="Flowers"&gt;</code>
+      <code class="mark">&lt;/picture&gt;</code>
+    </pre>
+  <p><small>The media query defines a condition. The first source, on which it is truthy, will be used.</small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;picture&gt;</h2>
+  <pre>
+      <code class="mark">&lt;picture&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 650px)" <mark>srcset="large.jpg"</mark>&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 465px)" srcset="small.jpg"&gt;</code>
+      <code class="mark">  &lt;img src="fallback.jpg" alt="Flowers"&gt;</code>
+      <code class="mark">&lt;/picture&gt;</code>
+    </pre>
+  <p><small>The srcset defines the source image.</small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;picture&gt;</h2>
+  <pre>
+      <code class="mark">&lt;picture&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 650px)"</code>
+      <code class="mark">          <mark>srcset="large.jpg 1x, large@2x.jpg 2x"</mark>&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 465px)" srcset="small.jpg"&gt;</code>
+      <code class="mark">  &lt;img src="fallback.jpg" alt="Flowers"&gt;</code>
+      <code class="mark">&lt;/picture&gt;</code>
+    </pre>
+  <p><small>It can also be used to serve multiple pixel densities.</small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;picture&gt;</h2>
+  <pre>
+      <code class="mark">&lt;picture&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 650px)" srcset="large.jpg"&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 465px)" srcset="small.jpg"&gt;</code>
+      <code class="mark">  <mark>&lt;img src="fallback.jpg" alt="Flowers"&gt;</mark></code>
+      <code class="mark">&lt;/picture&gt;</code>
+    </pre>
+  <p><small>The &lt;img&gt; element is used to display the evaluated or fallback image.</small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;picture&gt;</h2>
+  <pre>
+      <code class="mark">&lt;picture&gt;</code>
+      <code class="mark">  &lt;source <mark>srcset="exotic.jp2"</mark>&gt;</code>
+      <code class="mark">  &lt;source <mark>srcset="modern.webp"</mark>&gt;</code>
+      <code class="mark">  &lt;img <mark>src="legacy.jpg"</mark> alt="Flowers"&gt;</code>
+      <code class="mark">&lt;/picture&gt;</code>
+    </pre>
+  <p><small>The &lt;source&gt; can also be used to deliver modern file formats.</small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;picture&gt;</h2>
+  <div class="columns two">
+    <div>
+      <h3>Pro</h3>
+      <ul>
+        <li>Breakpoint specific images</li>
+        <li>Browser support</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Con</h3>
+      <ul>
+        <li>Amount of code</li>
+        <li>Complex image generation</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 <footer class="badge">
   <a href="https://github.com/shower/shower">Fork me on GitHub</a>
