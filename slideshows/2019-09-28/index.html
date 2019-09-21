@@ -8,6 +8,8 @@
   <style>
     .shower {
       --slide-ratio: calc(16 / 9);
+      --color-key: #E41E13;
+      --progress-size: 2px;
     }
 
     /* Allow combination of .mark and <mark> */
@@ -28,6 +30,220 @@
   <h1>Shower Presentation Engine</h1>
   <p>Yours Truly, Famous Inc.</p>
 </header>
+
+<section class="slide">
+  <h2>Image formats on the Internet</h2>
+  <ul>
+    <li>JPEG</li>
+    <li>GIF</li>
+    <li>PNG</li>
+    <li>WebP</li>
+    <li>SVG</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Image formats <small>(1/2)</small></h2>
+  <table>
+    <tr>
+      <th scope="col">Format</th>
+      <th>Max. color</th>
+      <th>Transparency</th>
+      <th>Compression</th>
+    </tr>
+    <tr>
+      <th scope="row">JPEG</th>
+      <td>16M</td>
+      <td>–</td>
+      <td>Lossy/Loss less</td>
+    </tr>
+    <tr>
+      <th scope="row">GIF</th>
+      <td>2 – 256</td>
+      <td>X (1-Bit)</td>
+      <td>Loss less</td>
+    </tr>
+    <tr>
+      <th scope="row">PNG-8</th>
+      <td>2 – 256</td>
+      <td>X (1-/8-Bit)</td>
+      <td>Lossy/Loss less</td>
+    </tr>
+    <tr>
+      <th scope="row">PNG-24</th>
+      <td>2 – 16M (256T)</td>
+      <td>X (8-Bit)</td>
+      <td>Lossy/Loss less</td>
+    </tr>
+    <tr>
+      <th scope="row">WebP</th>
+      <td>16M</td>
+      <td>X (8-Bit)</td>
+      <td>Lossy/Loss less</td>
+    </tr>
+    <tr>
+      <th scope="row">SVG</th>
+      <td>–</td>
+      <td>X</td>
+      <td>None</td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <h2>Image formats <small>(2/2)</small></h2>
+  <table>
+    <tr>
+      <th scope="col">Format</th>
+      <th>Vector</th>
+      <th>Animation</th>
+    </tr>
+    <tr>
+      <th scope="row">JPEG</th>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <th scope="row">GIF</th>
+      <td>–</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <th scope="row">PNG-8</th>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <th scope="row">PNG-24</th>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <th scope="row">WebP</th>
+      <td>–</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <th scope="row">SVG</th>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <h2>JPEG <sup>1</sup></h2>
+  <table>
+    <tr>
+      <th scope="row">Best for</th>
+      <td>Photos</td>
+    </tr>
+    <tr>
+      <th scope="row">Bad for</th>
+      <td>Text, graphics, logos</td>
+    </tr>
+    <tr>
+      <th scope="row">Positive</th>
+      <td>Browser support, platform support,<br> good compression/image quality</td>
+    </tr>
+    <tr>
+      <th scope="row">Negative</th>
+      <td>Old, no transparency</td>
+    </tr>
+  </table>
+  <p><small>1) Joint Photographic Experts Group</small></p>
+</section>
+
+<section class="slide">
+  <h2>GIF <sup>1</sup></h2>
+  <table>
+    <tr>
+      <th scope="row">Best for</th>
+      <td>Logos, icons, simple animations</td>
+    </tr>
+    <tr>
+      <th scope="row">Bad for</th>
+      <td>Photos, complex animations</td>
+    </tr>
+    <tr>
+      <th scope="row">Positive</th>
+      <td>Browser support, small file size for<br> limited color images, animations</td>
+    </tr>
+    <tr>
+      <th scope="row">Negative</th>
+      <td>Bad compression, 1-Bit transparency</td>
+    </tr>
+  </table>
+  <p><small>1) Graphics Interchange Format</small></p>
+</section>
+
+<section class="slide">
+  <h2>PNG <sup>1</sup></h2>
+  <table>
+    <tr>
+      <th scope="row">Best for</th>
+      <td>Logos, icons, HQ photos</td>
+    </tr>
+    <tr>
+      <th scope="row">Bad for</th>
+      <td>Compression for photos</td>
+    </tr>
+    <tr>
+      <th scope="row">Positive</th>
+      <td>Browser support, supports 8-/16-/24-/32-Bit,<br> for 8-Bit better compression than GIF,<br> up to 8-Bit transparency</td>
+    </tr>
+    <tr>
+      <th scope="row">Negative</th>
+      <td>Less good compression for photos than JPEG</td>
+    </tr>
+  </table>
+  <p><small>1) Portable Network Graphics</small></p>
+</section>
+
+<section class="slide">
+  <h2>WebP</h2>
+  <table>
+    <tr>
+      <th scope="row">Best for</th>
+      <td>Photos</td>
+    </tr>
+    <tr>
+      <th scope="row">Bad for</th>
+      <td>Text, graphics, logos</td>
+    </tr>
+    <tr>
+      <th scope="row">Positive</th>
+      <td>Very good compression/quality ratio,<br> supports animations</td>
+    </tr>
+    <tr>
+      <th scope="row">Negative</th>
+      <td>Medium browser support</td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <h2>SVG <sup>1</sup></h2>
+  <table>
+    <tr>
+      <th scope="row">Best for</th>
+      <td>Vectors, animations</td>
+    </tr>
+    <tr>
+      <th scope="row">Bad for</th>
+      <td>Pixel images</td>
+    </tr>
+    <tr>
+      <th scope="row">Positive</th>
+      <td>Browser support, XML based,<br> can be modified with JavaScript and CSS</td>
+    </tr>
+    <tr>
+      <th scope="row">Negative</th>
+      <td>–</td>
+    </tr>
+  </table>
+  <p><small>1) Scalable Vector Graphics</small></p>
+</section>
 
 <section class="slide">
   <h2>&lt;picture&gt;</h2>
