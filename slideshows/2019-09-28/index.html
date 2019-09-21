@@ -121,6 +121,56 @@
   </div>
 </section>
 
+<section class="slide">
+  <h2>&lt;img srcset&gt;</h2>
+  <pre>
+    <code class="mark">&lt;img <mark>srcset="small.jpg 320w, large.jpg 1440w, fallback.jpg"</mark></code>
+    <code class="mark">     src="fallback.jpg"&gt;</code>
+  </pre>
+  <p><small>With srcset we can define a set of resolutions for the same image. The images should have the same ration. "w" (width) equals "px".</small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;img srcset&gt;</h2>
+  <pre>
+    <code class="mark">&lt;img srcset="small.jpg 320w, large.jpg 1440w, fallback.jpg"</code>
+    <code class="mark">     <mark>src="fallback.jpg"</mark>&gt;</code>
+  </pre>
+  <p><small>The src value is used as a fallback.</small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;img srcset&gt;</h2>
+  <pre>
+    <code class="mark">&lt;img srcset="small.jpg 320w, large.jpg 1440w, fallback.jpg"</code>
+    <code class="mark">     <mark>sizes="(max-width: 1440px) 50vw, 100vw"</mark></code>
+    <code class="mark">     src="fallback.jpg"&gt;</code>
+  </pre>
+  <p><small>With sizes we can define how the image is displayed in the layout. Here the image uses 50% (50vw) of screens up to 1440px. Then the image is displayed in full width.</small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;img srcset&gt;</h2>
+  <div class="columns two">
+    <div>
+      <h3>Pro</h3>
+      <ul>
+        <li>Less code</li>
+        <li>Less complex</li>
+        <li>Browser will choose</li>
+        <li>Browser support</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Con</h3>
+      <ul>
+        <li>No alternate ratios</li>
+        <li>No type alternatives</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <footer class="badge">
   <a href="https://github.com/shower/shower">Fork me on GitHub</a>
 </footer>
