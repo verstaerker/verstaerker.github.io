@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="node_modules/@shower/material/styles/styles.css">
   <style>
+    small {
+      font-size: 0.8rem;
+    }
+
     .shower {
       --slide-ratio: calc(16 / 9);
       --color-key: #E41E13;
@@ -22,24 +26,59 @@
       text-align: right;
       right: 26px;
     }
+
+    .example-image {
+      background-image: url("assets/img/transparency-pattern.png");
+    }
+
+    .slide .no-border tr:not(:last-of-type) > * {
+      background: none;
+    }
+
+    .slide img {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 <body class="shower list">
 
 <header class="caption">
-  <h1>Shower Presentation Engine</h1>
-  <p>Yours Truly, Famous Inc.</p>
+  <h1>GBS SG</h1>
+  <p>Dipl. Gestalter/in HF Fachrichtung Interactive Media Design.</p>
 </header>
 
 <section class="slide">
   <h2>Image formats on the Internet</h2>
   <ul>
     <li>JPEG</li>
-    <li>GIF</li>
-    <li>PNG</li>
-    <li>WebP</li>
-    <li>SVG</li>
+    <li class="next">GIF</li>
+    <li class="next">PNG</li>
+    <li class="next">WebP</li>
+    <li class="next">SVG</li>
   </ul>
+</section>
+
+<section class="slide">
+  <h2>The test images</h2>
+  <div class="columns two" style="align-items: center">
+    <div>
+      <img class="example-image" src="assets/img/logo@400.png" alt="Logo original">
+    </div>
+    <div>
+      <img src="assets/img/photo@400.jpg" alt="Photo original">
+    </div>
+  </div>
+  <div class="columns two">
+    <div>
+      <p><small>Source: <a href="https://www.freepik.com/free-photos-vectors/logo"
+                   target="_blank">Logo vector created by freepik - www.freepik.com</a></small></p>
+    </div>
+    <div>
+      <p><small>Source: <a href="https://www.pexels.com/photo/purple-yellow-and-blue-balloon-on-swimming-pool-221361/"
+                   target="_blank">www.pexels.com</a></small></p>
+    </div>
+  </div>
 </section>
 
 <section class="slide">
@@ -51,37 +90,37 @@
       <th>Transparency</th>
       <th>Compression</th>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">JPEG</th>
       <td>16M</td>
       <td>–</td>
       <td>Lossy/Loss less</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">GIF</th>
       <td>2 – 256</td>
       <td>X (1-Bit)</td>
       <td>Loss less</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">PNG-8</th>
       <td>2 – 256</td>
       <td>X (1-/8-Bit)</td>
       <td>Lossy/Loss less</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">PNG-24</th>
       <td>2 – 16M (256T)</td>
       <td>X (8-Bit)</td>
       <td>Lossy/Loss less</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">WebP</th>
       <td>16M</td>
       <td>X (8-Bit)</td>
       <td>Lossy/Loss less</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">SVG</th>
       <td>–</td>
       <td>X</td>
@@ -98,32 +137,32 @@
       <th>Vector</th>
       <th>Animation</th>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">JPEG</th>
       <td>–</td>
       <td>–</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">GIF</th>
       <td>–</td>
       <td>X</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">PNG-8</th>
       <td>–</td>
       <td>–</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">PNG-24</th>
       <td>–</td>
       <td>–</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">WebP</th>
       <td>–</td>
       <td>X</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">SVG</th>
       <td>X</td>
       <td>X</td>
@@ -142,16 +181,80 @@
       <th scope="row">Bad for</th>
       <td>Text, graphics, logos</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">Positive</th>
       <td>Browser support, platform support,<br> good compression/image quality</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">Negative</th>
       <td>Old, no transparency</td>
     </tr>
   </table>
   <p><small>1) Joint Photographic Experts Group</small></p>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>JPEG high</th>
+      <th>JPEG low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/logo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/jpg_logo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/jpg_logo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~2.1 Mb
+      </td>
+      <td>
+        ~75 Kb
+      </td>
+      <td>
+        ~29 Kb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>JPEG high</th>
+      <th>JPEG low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/photo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/jpg_photo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/jpg_photo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~53.7 Mb
+      </td>
+      <td>
+        ~3.8 Mb
+      </td>
+      <td>
+        ~387 Kb
+      </td>
+    </tr>
+  </table>
 </section>
 
 <section class="slide">
@@ -165,16 +268,80 @@
       <th scope="row">Bad for</th>
       <td>Photos, complex animations</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">Positive</th>
       <td>Browser support, small file size for<br> limited color images, animations</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">Negative</th>
       <td>Bad compression, 1-Bit transparency</td>
     </tr>
   </table>
   <p><small>1) Graphics Interchange Format</small></p>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>GIF high</th>
+      <th>GIF low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/logo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/gif_logo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/gif_logo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~2.1 Mb
+      </td>
+      <td>
+        ~75 Kb
+      </td>
+      <td>
+        ~29 Kb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>GIF high</th>
+      <th>GIF low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/photo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/gif_photo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/gif_photo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~53.7 Mb
+      </td>
+      <td>
+        ~9.1 Mb
+      </td>
+      <td>
+        ~4 Mb
+      </td>
+    </tr>
+  </table>
 </section>
 
 <section class="slide">
@@ -188,16 +355,131 @@
       <th scope="row">Bad for</th>
       <td>Compression for photos</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">Positive</th>
-      <td>Browser support, supports 8-/16-/24-/32-Bit,<br> for 8-Bit better compression than GIF,<br> up to 8-Bit transparency</td>
+      <td>Browser support, supports 8-/16-/24-/32-Bit,<br> for 8-Bit better compression than GIF,<br> up to 8-Bit transparency
+      </td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">Negative</th>
       <td>Less good compression for photos than JPEG</td>
     </tr>
   </table>
   <p><small>1) Portable Network Graphics</small></p>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>PNG-8 high</th>
+      <th>PNG-8 low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/logo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/png8_logo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/png8_logo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~2.1 Mb
+      </td>
+      <td>
+        ~18 Kb
+      </td>
+      <td>
+        ~16 Kb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>PNG-8 high</th>
+      <th>PNG-8 low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/photo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/png8_photo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/png8_photo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~53.7 Mb
+      </td>
+      <td>
+        ~7.2 Mb
+      </td>
+      <td>
+        ~3.3 Mb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>PNG-24 high</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/logo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/png24_logo_high.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~2.1 Mb
+      </td>
+      <td>
+        ~32 Kb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>PNG-24 high</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/photo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/png24_photo_high.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~53.7 Mb
+      </td>
+      <td>
+        ~26.9 Mb
+      </td>
+    </tr>
+  </table>
 </section>
 
 <section class="slide">
@@ -211,13 +493,77 @@
       <th scope="row">Bad for</th>
       <td>Text, graphics, logos</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">Positive</th>
-      <td>Very good compression/quality ratio,<br> supports animations</td>
+      <td>Very good compression/quality ratio,<br> supports animations, transparency</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">Negative</th>
       <td>Medium browser support</td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>WebP high</th>
+      <th>WebP low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/logo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/webp_logo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/webp_logo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~2.1 Mb
+      </td>
+      <td>
+        ~24 Kb
+      </td>
+      <td>
+        ~17 Kb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>WebP high</th>
+      <th>WebP low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/photo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/webp_photo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/webp_photo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~53.7 Mb
+      </td>
+      <td>
+        ~1.8 Mb
+      </td>
+      <td>
+        ~195 Kb
+      </td>
     </tr>
   </table>
 </section>
@@ -233,16 +579,66 @@
       <th scope="row">Bad for</th>
       <td>Pixel images</td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">Positive</th>
-      <td>Browser support, XML based,<br> can be modified with JavaScript and CSS</td>
+      <td>Browser support, XML based,<br> can be modified with JavaScript and CSS,<br> in general much smaller than pixel images.
+      </td>
     </tr>
-    <tr>
+    <tr class="next">
       <th scope="row">Negative</th>
       <td>–</td>
     </tr>
   </table>
   <p><small>1) Scalable Vector Graphics</small></p>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>EPS</th>
+      <th>SVG</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/logo@400.png" alt="Example image" width="350">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/logo.svg" alt="Example image" width="350">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~615 Kb
+      </td>
+      <td>
+        ~13 Kb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <h2>Try it yourself</h2>
+  <p>Download this test images and see how much you can reduce them in size.</p>
+  <p>For pixel images you can use <a href="https://squoosh.app/" target="_blank">Squoosh</a>, for SVG
+    <a href="https://jakearchibald.github.io/svgomg/" target="_blank">SVGOMG!</a></p>
+  <div class="columns three" style="align-items: end;">
+    <a href="assets/img/logo.svg" target="_blank">
+      <img src="assets/img/logo.svg" alt="Logo">
+    </a>
+    <a href="assets/img/art-balloons-birthday-221361.jpg" target="_blank">
+      <img src="assets/img/art-balloons-birthday-221361.jpg" alt="Photo">
+    </a>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Responsive images</h2>
+  <p>How we can use responsive images on a website.</p>
+  <ul>
+    <li class="next">&lt;picture&gt;</li>
+    <li class="next">&lt;img srcset&gt;</li>
+  </ul>
 </section>
 
 <section class="slide">
@@ -327,7 +723,7 @@
         <li>Browser support</li>
       </ul>
     </div>
-    <div>
+    <div class="next">
       <h3>Con</h3>
       <ul>
         <li>Amount of code</li>
@@ -343,7 +739,9 @@
     <code class="mark">&lt;img <mark>srcset="small.jpg 320w, large.jpg 1440w, fallback.jpg"</mark></code>
     <code class="mark">     src="fallback.jpg"&gt;</code>
   </pre>
-  <p><small>With srcset we can define a set of resolutions for the same image. The images should have the same ration. "w" (width) equals "px".</small></p>
+  <p>
+    <small>With srcset we can define a set of resolutions for the same image. You can also use 1x/2x resolution descriptors, but don't mix them! Also, the images should have the same ration. "w" (width) equals "px".</small>
+  </p>
 </section>
 
 <section class="slide">
@@ -362,7 +760,9 @@
     <code class="mark">     <mark>sizes="(max-width: 1440px) 50vw, 100vw"</mark></code>
     <code class="mark">     src="fallback.jpg"&gt;</code>
   </pre>
-  <p><small>With sizes we can define how the image is displayed in the layout. Here the image uses 50% (50vw) of screens up to 1440px. Then the image is displayed in full width.</small></p>
+  <p>
+    <small>With sizes we can define how the image is displayed in the layout. Here the image uses 50% (50vw) of screens up to 1440px. Then the image is displayed in full width.</small>
+  </p>
 </section>
 
 <section class="slide">
@@ -377,7 +777,7 @@
         <li>Browser support</li>
       </ul>
     </div>
-    <div>
+    <div class="next">
       <h3>Con</h3>
       <ul>
         <li>No alternate ratios</li>
