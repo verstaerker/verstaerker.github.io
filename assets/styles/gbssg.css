@@ -3,16 +3,26 @@ body {
 }
 
 header {
+  padding: 30px;
   margin-bottom: 80px;
+  background: #E41E13;
+  color: #fff;
 }
 
 article {
-  background-color: #eee;
-  padding: 0 20px 80px;
   margin-bottom: 40px;
 }
 
-article h3 {
+main {
+  padding: 30px;
+}
+
+.article-block {
+  background-color: #eee;
+  padding: 0 20px 80px;
+}
+
+.article-block h3 {
   margin: 0 -20px 20px;
   padding: 10px 20px;
   background-color: #ccc
@@ -23,10 +33,6 @@ article h3 {
   margin-top: 10px;
   font-size: 1.5rem;
   font-weight: 300;
-}
-
-.wrapper {
-  padding: 30px;
 }
 
 .content {
