@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shower Presentation Engine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="shower/themes/material/styles/styles.css">
+  <style>
+    small {
+      font-size: 0.8rem;
+    }
+
+    iframe {
+      display: block;
+      margin: auto;
+    }
+
+    .shower {
+      --slide-ratio: calc(16 / 9);
+      --color-key: #E41E13;
+      --progress-size: 2px;
+    }
+
+    /* Allow combination of .mark and <mark> */
+    .slide pre code.mark:not(:only-child) {
+      position: relative;
+      z-index: -1;
+    }
+
+    .slide::after {
+      text-align: right;
+      right: 26px;
+    }
+
+    .example-image {
+      background-image: url("assets/img/transparency-pattern.png");
+    }
+
+    .slide .no-border tr:not(:last-of-type) > * {
+      background: none;
+    }
+
+    .slide img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body class="shower list">
+
+<header class="caption">
+  <h1>GBS SG</h1>
+  <p>Dipl. Gestalter/in HF Fachrichtung Interactive Media Design.</p>
+</header>
+
+<section class="slide">
+  <h2 class="shout">A11y</h2>
+</section>
+
+<section class="slide">
+  <h2>Barrierefreiheit</h2>
+  <figure>
+    <blockquote>
+      <p>Barrierefreiheit <span style="font-style: normal">[Accessibility]</span> bezeichnet eine Gestaltung der Umwelt dergestalt, dass sie auch von Menschen mit Beeinträchtigungen ohne zusätzliche Hilfen genutzt und wahrgenommen werden können.</p>
+    </blockquote>
+    <figcaption>Wikipedia</figcaption>
+  </figure>
+</section>
+
+<section class="slide">
+  <h2>Arten der Beeinträchtigung</h2>
+  <div class="columns two">
+    <ul>
+      <li class="next">Kein Sehvermögen</li>
+      <li class="next">Beeinträchtigtes Sehvermögen</li>
+      <li class="next">Verfälschtes Sehvermögen</li>
+      <li class="next">Grobe Motorik</li>
+      <li class="next">Unkoordinierte Motorik</li>
+      <li class="next">Leseschwäche</li>
+      <li class="next">Verständnisschwäche</li>
+    </ul>
+    <ul>
+      <li class="next">Sprachstörung</li>
+      <li class="next">Femdsprachig</li>
+      <li class="next">Vestibulare Störung, Migräne</li>
+      <li class="next">Alternatives Eingabegerät</li>
+      <li class="next">Eine Maschine</li>
+    </ul>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Rechtliche Grundlage</h2>
+  <p>
+    Die Schweizerische Bundesverfassung legt fest, dass niemand aufgrund einer Behinderung diskriminiert werden darf (BV Art. 8). Das im Jahr 2004 in Kraft getretene Behindertengleichstellungsgesetz (BehiG) regelt die Details.
+  </p>
+</section>
+
+<section class="slide">
+  <h2>Rechtliche Grundlage</h2>
+  <p>
+    Webseiten des Bundes müssen bereits seit dem 31.12.2010 den Bedingungen des WCAG 2.0 entsprechen und mindestens die Konformitätsstufe AA erreichen.
+  </p>
+</section>
+
+<section class="slide">
+  <h2>Konformitätsstufe A</h2>
+  <ul>
+    <li>Logische Reihenfolge</li>
+    <li>Visuelle Elemente mit Textalternative</li>
+    <li>Minimale Tastaturbedienung</li>
+    <li>Schnellnavigation</li>
+    <li>...</li>
+  </ul>
+  <p><small>Quelle: <a href="https://www.w3.org/WAI/WCAG21/quickref" target="_blank">How to meet WCAG</a></small></p>
+</section>
+
+<section class="slide">
+  <h2>Konformitätsstufe AA</h2>
+  <ul>
+    <li>Transkript für Medien</li>
+    <li>Hoher Kontrast</li>
+    <li>Text skalierbar</li>
+    <li>Schnellnavigation</li>
+    <li>...</li>
+  </ul>
+  <p><small>Quelle: <a href="https://www.w3.org/WAI/WCAG21/quickref" target="_blank">How to meet WCAG</a></small></p>
+</section>
+
+<section class="slide">
+  <h2>Konformitätsstufe AAA</h2>
+  <ul>
+    <li>Sehr hoher Kontrast</li>
+    <li>Text skalierbar</li>
+    <li>Worterklärung</li>
+    <li>Maximale Tastaturbedienung</li>
+    <li>...</li>
+  </ul>
+  <p><small>Quelle: <a href="https://www.w3.org/WAI/WCAG21/quickref" target="_blank">How to meet WCAG</a></small></p>
+</section>
+
+<section class="slide">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/c0nvdiRdehw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section class="slide">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/UzffnbBex6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section class="slide">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/V1yoOLhx_qA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section class="slide">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/X6IjmmFcoWw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section class="slide">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/9fcK19CAjWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section class="slide">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Jzah0A6IC5o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section class="slide">
+  <h2>Systemeinstellungen</h2>
+  <ul>
+    <li class="next">Schriftgrösse</li>
+    <li class="next">Auflösung</li>
+    <li class="next">Zoom</li>
+    <li class="next">Erhöhter Kontrast</li>
+    <li class="next">Reduzierte Bewegung</li>
+    <li class="next">...</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Bedienungshilfen</h2>
+  <div class="columns three">
+    <div>
+      <h3>macOS/iOS</h3>
+      <ul>
+        <li>VoiceOver</li>
+        <li>Schaltersteuerung</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Windows</h3>
+      <ul>
+        <li>Narator</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Android</h3>
+      <ul>
+        <li>TalkBack</li>
+        <li>Schaltersteuerung</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Tools</h2>
+  <div class="columns two">
+    <ul>
+      <li class="next">Entwicklungstools des Browsers</li>
+      <li class="next">Audit</li>
+      <li class="next"><a href="https://github.com/Metamatrix/Web-Disability-Simulator"
+             target="_blank">Plugin: Web Disability Simulator</a></li>
+      <li class="next"><a href="https://www.deque.com/axe/" target="_blank">Plugin: axe</a></li>
+      <li class="next"><a href="https://wave.webaim.org/extension/" target="_blank">Wave</a></li>
+    </ul>
+    <ul>
+      <li class="next">
+        <a href="https://developer.apple.com/library/archive/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXTestingApps.html"
+           target="_blank">Xcode Accessibility Inspector</a></li>
+      <li class="next"><a href="https://colororacle.org/" target="_blank">Color Oracle</a></li>
+      <li class="next"><a href="https://khan.github.io/tota11y/" target="_blank">tota11y</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Manuelles Testing</h2>
+  <div class="columns two">
+    <ul>
+      <li class="next">Kann mit der Tab-Taste navigiert werden?</li>
+      <li class="next">Werden keine Elemente ausserhalb des Viewports fokussiert?</li>
+      <li class="next">Wurden die Titelebenen sinnvoll eingestzt?</li>
+    </ul>
+    <ul>
+      <li class="next">Sind einzelne Sektionen durch spezifische Elemente ausgezeichnet?</li>
+      <li class="next">Gibt es Skip-Links?</li>
+      <li class="next">Sind Label für Formularelemente vorhanden?</li>
+    </ul>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Übung</h2>
+  <p>Schlagt eine Lösung für eine Situation im Alltag vor, bei der ein Mensch mit Beeinträchtigung Probleme haben könnte.</p>
+</section>
+
+<section class="slide">
+  <h2>Weitere Quellen</h2>
+  <div class="columns two">
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=Ag3DMNbL_ig&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g"
+             target="_blank">A11ycasts</a></li>
+      <li><a href="https://webaim.org/resources/designers/" target="_blank">Web Accessibility for Designers</a></li>
+      <li><a href="https://webaccessibility.guide/" target="_blank">Web Accessibility Guide</a></li>
+      <li><a href="https://material.io/design/usability/accessibility.html#implementing-accessibility" target="_blank">Material Design Accessibility</a></li>
+      <li><a href="https://developer.apple.com/accessibility/" target="_blank">Apple Accessibility</a></li>
+      <li><a href="https://www.microsoft.com/en-us/accessibility" target="_blank">Microsoft Accessibility</a></li>
+      <li><a href="https://developers.google.com/web/fundamentals/accessibility/how-to-review?utm_campaign=chrome_series_accessibilityreview_081817&utm_source=chromedev&utm_medium=yt-desc" target="_blank">How to do an Accessibility Review</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://www.accessibility-developer-guide.com/" target="_blank">Accessibility Developer Guide</a></li>
+      <li><a href="https://www.smashingmagazine.com/2016/10/inclusive-design-patterns/" target="_blank">Buch: Inclusive Front-End Design Patterns</a></li>
+      <li><a href="https://a11y.me/" target="_blank">a11y.me</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0" target="_blank">WCAG Quick Reference</a></li>
+      <li><a href="https://developer.mozilla.org/de/docs/Web/Barrierefreiheit/ARIA" target="_blank">ARIA</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="slide">
+  <h2 class="shout">Images</h2>
+</section>
+
+<section class="slide">
+  <h2>
+    Image formats on the Internet
+  </h2>
+  <ul>
+    <li class="next">JPEG</li>
+    <li class="next">GIF</li>
+    <li class="next">PNG</li>
+    <li class="next">WebP</li>
+    <li class="next">SVG</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>
+    The test images
+  </h2>
+  <div class="columns two" style="align-items: center">
+    <div>
+      <img class="example-image" src="assets/img/logo@400.png" alt="Logo original">
+    </div>
+    <div>
+      <img src="assets/img/photo@400.jpg" alt="Photo original">
+    </div>
+  </div>
+  <div class="columns two">
+    <div>
+      <p><small>Source: <a href="https://www.freepik.com/free-photos-vectors/logo"
+                   target="_blank">Logo vector created by freepik - www.freepik.com</a></small></p>
+    </div>
+    <div>
+      <p><small>Source: <a href="https://www.pexels.com/photo/purple-yellow-and-blue-balloon-on-swimming-pool-221361/"
+                   target="_blank">www.pexels.com</a></small></p>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Image formats <small>(1/2)</small></h2>
+  <table>
+    <tr>
+      <th scope="col">Format</th>
+      <th>Max. color</th>
+      <th>Transparency</th>
+      <th>Compression</th>
+    </tr>
+    <tr class="next">
+      <th scope="row">JPEG</th>
+      <td>16M</td>
+      <td>–</td>
+      <td>Lossy/Loss less</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">GIF</th>
+      <td>2 – 256</td>
+      <td>X (1-Bit)</td>
+      <td>Loss less</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">PNG-8</th>
+      <td>2 – 256</td>
+      <td>X (1-/8-Bit)</td>
+      <td>Lossy/Loss less</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">PNG-24</th>
+      <td>2 – 16M (256T)</td>
+      <td>X (8-Bit)</td>
+      <td>Lossy/Loss less</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">WebP</th>
+      <td>16M</td>
+      <td>X (8-Bit)</td>
+      <td>Lossy/Loss less</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">SVG</th>
+      <td>–</td>
+      <td>X</td>
+      <td>None</td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <h2>Image formats <small>(2/2)</small></h2>
+  <table>
+    <tr>
+      <th scope="col">Format</th>
+      <th>Vector</th>
+      <th>Animation</th>
+    </tr>
+    <tr class="next">
+      <th scope="row">JPEG</th>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">GIF</th>
+      <td>–</td>
+      <td>X</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">PNG-8</th>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">PNG-24</th>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">WebP</th>
+      <td>–</td>
+      <td>X</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">SVG</th>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <h2>JPEG <sup>1</sup></h2>
+  <table>
+    <tr>
+      <th scope="row">Best for</th>
+      <td>Photos</td>
+    </tr>
+    <tr>
+      <th scope="row">Bad for</th>
+      <td>Text, graphics, logos</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">Positive</th>
+      <td>Browser support, platform support,<br> good compression/image quality</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">Negative</th>
+      <td>Old, no transparency</td>
+    </tr>
+  </table>
+  <p><small>1) Joint Photographic Experts Group</small></p>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>JPEG high</th>
+      <th>JPEG low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/logo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/jpg_logo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/jpg_logo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~2.1 Mb
+      </td>
+      <td>
+        ~75 Kb
+      </td>
+      <td>
+        ~29 Kb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>JPEG high</th>
+      <th>JPEG low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/photo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/jpg_photo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/jpg_photo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~53.7 Mb
+      </td>
+      <td>
+        ~3.8 Mb
+      </td>
+      <td>
+        ~387 Kb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <h2>GIF <sup>1</sup></h2>
+  <table>
+    <tr>
+      <th scope="row">Best for</th>
+      <td>Logos, icons, simple animations</td>
+    </tr>
+    <tr>
+      <th scope="row">Bad for</th>
+      <td>Photos, complex animations</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">Positive</th>
+      <td>Browser support, small file size for<br> limited color images, animations</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">Negative</th>
+      <td>Bad compression, 1-Bit transparency</td>
+    </tr>
+  </table>
+  <p><small>1) Graphics Interchange Format</small></p>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>GIF high</th>
+      <th>GIF low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/logo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/gif_logo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/gif_logo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~2.1 Mb
+      </td>
+      <td>
+        ~75 Kb
+      </td>
+      <td>
+        ~29 Kb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>GIF high</th>
+      <th>GIF low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/photo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/gif_photo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/gif_photo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~53.7 Mb
+      </td>
+      <td>
+        ~9.1 Mb
+      </td>
+      <td>
+        ~4 Mb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <h2>PNG <sup>1</sup></h2>
+  <table>
+    <tr>
+      <th scope="row">Best for</th>
+      <td>Logos, icons, HQ photos</td>
+    </tr>
+    <tr>
+      <th scope="row">Bad for</th>
+      <td>Compression for photos</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">Positive</th>
+      <td>Browser support, supports 8-/16-/24-/32-Bit,<br> for 8-Bit better compression than GIF,<br> up to 8-Bit transparency
+      </td>
+    </tr>
+    <tr class="next">
+      <th scope="row">Negative</th>
+      <td>Less good compression for photos than JPEG</td>
+    </tr>
+  </table>
+  <p><small>1) Portable Network Graphics</small></p>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>PNG-8 high</th>
+      <th>PNG-8 low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/logo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/png8_logo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/png8_logo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~2.1 Mb
+      </td>
+      <td>
+        ~18 Kb
+      </td>
+      <td>
+        ~16 Kb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>PNG-8 high</th>
+      <th>PNG-8 low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/photo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/png8_photo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/png8_photo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~53.7 Mb
+      </td>
+      <td>
+        ~7.2 Mb
+      </td>
+      <td>
+        ~3.3 Mb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>PNG-24 high</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/logo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/png24_logo_high.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~2.1 Mb
+      </td>
+      <td>
+        ~32 Kb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>PNG-24 high</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/photo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/png24_photo_high.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~53.7 Mb
+      </td>
+      <td>
+        ~26.9 Mb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <h2>WebP</h2>
+  <table>
+    <tr>
+      <th scope="row">Best for</th>
+      <td>Photos</td>
+    </tr>
+    <tr>
+      <th scope="row">Bad for</th>
+      <td>Text, graphics, logos</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">Positive</th>
+      <td>Very good compression/quality ratio,<br> supports animations, transparency</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">Negative</th>
+      <td>Medium browser support</td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>WebP high</th>
+      <th>WebP low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/logo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/webp_logo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/webp_logo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~2.1 Mb
+      </td>
+      <td>
+        ~24 Kb
+      </td>
+      <td>
+        ~17 Kb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>Original</th>
+      <th>WebP high</th>
+      <th>WebP low</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/photo.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/webp_photo_high.png" alt="Example image" width="250" height="250">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/webp_photo_low.png" alt="Example image" width="250" height="250">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~53.7 Mb
+      </td>
+      <td>
+        ~1.8 Mb
+      </td>
+      <td>
+        ~195 Kb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="slide">
+  <h2>SVG <sup>1</sup></h2>
+  <table>
+    <tr>
+      <th scope="row">Best for</th>
+      <td>Vectors, animations</td>
+    </tr>
+    <tr>
+      <th scope="row">Bad for</th>
+      <td>Pixel images</td>
+    </tr>
+    <tr class="next">
+      <th scope="row">Positive</th>
+      <td>Browser support, XML based,<br> can be modified with JavaScript and CSS,<br> in general much smaller than pixel images.
+      </td>
+    </tr>
+    <tr class="next">
+      <th scope="row">Negative</th>
+      <td>–</td>
+    </tr>
+  </table>
+  <p><small>1) Scalable Vector Graphics</small></p>
+</section>
+
+<section class="slide">
+  <table class="no-border">
+    <tr>
+      <th>EPS</th>
+      <th>SVG</th>
+    </tr>
+    <tr>
+      <td>
+        <img class="example-image" src="assets/img/logo@400.png" alt="Example image" width="350">
+      </td>
+      <td>
+        <img class="example-image" src="assets/img/logo.svg" alt="Example image" width="350">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ~615 Kb
+      </td>
+      <td>
+        ~13 Kb
+      </td>
+    </tr>
+  </table>
+</section>
+
+<!--<section class="slide">-->
+<!--  <h2>Optimization options</h2>-->
+<!--  <div class="columns three">-->
+<!--    <div>-->
+<!--      <h3>Original</h3>-->
+<!--      <img src="assets/img/full-color.png" alt="Original">-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <h3>Color reducing</h3>-->
+<!--      <img src="assets/img/reduced-color.png" alt="Color reducing">-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <h3>Dithering</h3>-->
+<!--      <img src="assets/img/dither-color.png" alt="Dithering">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<section class="slide">
+  <h2>Try it yourself</h2>
+  <p>Download this test images and see how much you can reduce them in size.</p>
+  <p>For pixel images you can use <a href="https://squoosh.app/" target="_blank">Squoosh</a>, for SVG
+    <a href="https://jakearchibald.github.io/svgomg/" target="_blank">SVGOMG!</a></p>
+  <div class="columns three" style="align-items: end;">
+    <a href="assets/img/logo.svg" target="_blank">
+      <img src="assets/img/logo.svg" alt="Logo">
+    </a>
+    <a href="assets/img/art-balloons-birthday-221361.jpg" target="_blank">
+      <img src="assets/img/art-balloons-birthday-221361.jpg" alt="Photo">
+    </a>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Responsive images</h2>
+  <p>How we can use responsive images on a website.</p>
+  <ul>
+    <li class="next">&lt;picture&gt;</li>
+    <li class="next">&lt;img srcset&gt;</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>&lt;picture&gt;</h2>
+  <pre>
+      <code class="mark">&lt;picture&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 650px)" srcset="large.jpg"&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 465px)" srcset="small.jpg"&gt;</code>
+      <code class="mark">  &lt;img src="fallback.jpg" alt="Flowers"&gt;</code>
+      <code class="mark">&lt;/picture&gt;</code>
+    </pre>
+</section>
+
+<section class="slide">
+  <h2>&lt;picture&gt;</h2>
+  <pre>
+      <code class="mark">&lt;picture&gt;</code>
+      <code class="mark">  &lt;source <mark>media="(min-width: 650px)"</mark> srcset="large.jpg"&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 465px)" srcset="small.jpg"&gt;</code>
+      <code class="mark">  &lt;img src="fallback.jpg" alt="Flowers"&gt;</code>
+      <code class="mark">&lt;/picture&gt;</code>
+    </pre>
+  <p><small>The media query defines a condition. The first source, on which it is truthy, will be used.</small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;picture&gt;</h2>
+  <pre>
+      <code class="mark">&lt;picture&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 650px)" <mark>srcset="large.jpg"</mark>&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 465px)" srcset="small.jpg"&gt;</code>
+      <code class="mark">  &lt;img src="fallback.jpg" alt="Flowers"&gt;</code>
+      <code class="mark">&lt;/picture&gt;</code>
+    </pre>
+  <p><small>The srcset defines the source image.</small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;picture&gt;</h2>
+  <pre>
+      <code class="mark">&lt;picture&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 650px)"</code>
+      <code class="mark">          <mark>srcset="large.jpg 1x, large@2x.jpg 2x"</mark>&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 465px)" srcset="small.jpg"&gt;</code>
+      <code class="mark">  &lt;img src="fallback.jpg" alt="Flowers"&gt;</code>
+      <code class="mark">&lt;/picture&gt;</code>
+    </pre>
+  <p><small>It can also be used to serve multiple pixel densities.</small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;picture&gt;</h2>
+  <pre>
+      <code class="mark">&lt;picture&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 650px)" srcset="large.jpg"&gt;</code>
+      <code class="mark">  &lt;source media="(min-width: 465px)" srcset="small.jpg"&gt;</code>
+      <code class="mark">  <mark>&lt;img src="fallback.jpg" alt="Flowers"&gt;</mark></code>
+      <code class="mark">&lt;/picture&gt;</code>
+    </pre>
+  <p><small>The &lt;img&gt; element is used to display the evaluated or fallback image.</small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;picture&gt;</h2>
+  <pre>
+      <code class="mark">&lt;picture&gt;</code>
+      <code class="mark">  &lt;source <mark>srcset="exotic.jp2"</mark>&gt;</code>
+      <code class="mark">  &lt;source <mark>srcset="modern.webp"</mark>&gt;</code>
+      <code class="mark">  &lt;img <mark>src="legacy.jpg"</mark> alt="Flowers"&gt;</code>
+      <code class="mark">&lt;/picture&gt;</code>
+    </pre>
+  <p><small>The &lt;source&gt; can also be used to deliver modern file formats.</small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;picture&gt;</h2>
+  <div class="columns two">
+    <div>
+      <h3>Pro</h3>
+      <ul>
+        <li>Breakpoint specific images</li>
+        <li>Browser support</li>
+      </ul>
+    </div>
+    <div class="next">
+      <h3>Con</h3>
+      <ul>
+        <li>Amount of code</li>
+        <li>Complex image generation</li>
+      </ul>
+    </div>
+  </div>
+  <p><small><a href="https://codepen.io/patric-eberle/pen/qBWgBeZ" target="_blank">CodePen</a></small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;img srcset&gt;</h2>
+  <pre>
+    <code class="mark">&lt;img <mark>srcset="small.jpg 320w, large.jpg 1440w, fallback.jpg"</mark></code>
+    <code class="mark">     src="fallback.jpg"&gt;</code>
+  </pre>
+  <p>
+    <small>With srcset we can define a set of resolutions for the same image. You can also use 1x/2x resolution descriptors, but don't mix them! Also, the images should have the same ration. "w" (width) equals "px".</small>
+  </p>
+</section>
+
+<section class="slide">
+  <h2>&lt;img srcset&gt;</h2>
+  <pre>
+    <code class="mark">&lt;img srcset="small.jpg 320w, large.jpg 1440w, fallback.jpg"</code>
+    <code class="mark">     <mark>src="fallback.jpg"</mark>&gt;</code>
+  </pre>
+  <p><small>The src value is used as a fallback.</small></p>
+</section>
+
+<section class="slide">
+  <h2>&lt;img srcset&gt;</h2>
+  <pre>
+    <code class="mark">&lt;img srcset="small.jpg 320w, large.jpg 1440w, fallback.jpg"</code>
+    <code class="mark">     <mark>sizes="(max-width: 1440px) 50vw, 100vw"</mark></code>
+    <code class="mark">     src="fallback.jpg"&gt;</code>
+  </pre>
+  <p>
+    <small>With sizes we can define how the image is displayed in the layout. Here the image uses 50% (50vw) of screens up to 1440px. Then the image is displayed in full width.</small>
+  </p>
+</section>
+
+<section class="slide">
+  <h2>&lt;img srcset&gt;</h2>
+  <div class="columns two">
+    <div>
+      <h3>Pro</h3>
+      <ul>
+        <li>Less code</li>
+        <li>Less complex</li>
+        <li>Browser will choose</li>
+        <li>Browser support</li>
+      </ul>
+    </div>
+    <div class="next">
+      <h3>Con</h3>
+      <ul>
+        <li>No alternate ratios</li>
+        <li>No type alternatives</li>
+      </ul>
+    </div>
+  </div>
+  <p><small><a href="https://codepen.io/patric-eberle/pen/aboXzBN" target="_blank">CodePen</a></small></p>
+</section>
+
+<section class="slide">
+  <h2>CDN <sup>1</sup></h2>
+  <div class="columns two">
+    <div>
+      <p>Instead of handling all the tasks which relate to responsive images (defining the HTML, processing and store all images, ...) you can also use or even host a CDN service.</p>
+    </div>
+    <div>
+      <ul>
+        <li>
+          <a href="https://cloudinary.com/" target="_blank">Cloudinary</a>
+        </li>
+        <li>
+          <a href="https://www.imgix.com/" target="_blank">imgix</a>
+        </li>
+        <li>
+          <a href="https://www.keycdn.com/" target="_blank">KeyCND</a>
+        </li>
+        <li>
+          <a href="https://github.com/thumbor/thumbor" target="_blank">thumbor (self hosted)</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <small>1) Content Delivery Network</small>
+</section>
+
+<footer class="badge">
+  <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+</footer>
+
+<div class="progress"></div>
+
+<script src="shower/shower.min.js"></script>
+<!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
