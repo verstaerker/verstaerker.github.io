@@ -2,6 +2,7 @@
   "extends": [
     "config:base"
   ],
+  "prConcurrentLimit": 50,
   "packageRules": [
     {
       "matchUpdateTypes": ["patch", "minor"],
