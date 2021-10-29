@@ -1,5 +1,15 @@
 {
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "NPM update (non-major)"
+    },
+    {
+      "matchUpdateTypes": ["patch", "major"],
+      "groupName": "NPM update (major)"
+    }
   ]
 }
