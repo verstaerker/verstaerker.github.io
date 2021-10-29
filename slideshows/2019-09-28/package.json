@@ -27,13 +27,13 @@
     "README.md"
   ],
   "dependencies": {
-    "@shower/material": "^2.2.1",
-    "@shower/ribbon": "^3.2.2",
-    "shower-core": "^2.1.0"
+    "@shower/material": "2.2.1",
+    "@shower/ribbon": "3.2.2",
+    "shower-core": "2.1.0"
   },
   "devDependencies": {
-    "path-exists-cli": "^1.0.0",
-    "@shower/cli": "^0.2.6"
+    "path-exists-cli": "1.0.0",
+    "@shower/cli": "0.2.6"
   },
   "scripts": {
     "pdf": "shower pdf",
