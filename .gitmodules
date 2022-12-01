@@ -1,0 +1,3 @@
+[submodule "talks/write-unmaintainable-code"]
+	path = talks/write-unmaintainable-code-source
+	url = https://github.com/verstaerker/write-unmaintainable-code.git
